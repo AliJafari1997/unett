@@ -64,7 +64,7 @@ class decoder_block(nn.Module):
         return x
 
 
-class build_unet(nn.Module):
+class build_model(nn.Module):
     def __init__(self):
         super().__init__()
 
