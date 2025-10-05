@@ -106,18 +106,3 @@ class build_unet(nn.Module):
         outputs = self.outputs(d4)
 
         return outputs
-
-if __name__ == "__main__":
-    # inputs = torch.randn((2, 32, 256, 256))
-    # e = encoder_block(32, 64)
-    # x, p = e(inputs)
-    # print(x.shape, p.shape)
-    #
-    # d = decoder_block(64, 32)
-    # y = d(p, x)
-    # print(y.shape)
-
-    inputs = torch.randn((2, 3, 512, 512))
-    model = build_unet()
-    y = model(inputs)
-    print(y.shape)
